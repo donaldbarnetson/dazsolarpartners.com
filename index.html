@@ -1,486 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAZ Solar Partners, LLC – Clean Energy for the World</title>
-    <style>
-        :root {
-            /* Color Theme Options - Change the active theme by uncommenting one */
-            
-            /* Purple Theme */
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAZ Solar Partners, LLC — Clean Energy for Your Business</title>
+  <meta name="description" content="DAZ Solar Partners delivers cost-effective solar solutions through Power Purchase Agreements. $0 upfront, immediate savings, maintenance included.">
+  <link rel="canonical" href="https://dazsolarpartners.com/">
 
-            
-            /* --primary-color: #667eea;
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DAZ Solar Partners, LLC — Clean Energy for Your Business">
+  <meta property="og:description" content="$0 upfront solar energy through Power Purchase Agreements. Start saving from day one.">
+  <meta property="og:url" content="https://dazsolarpartners.com/">
+  <meta property="og:site_name" content="DAZ Solar Partners">
 
-            
-            --secondary-color: #764ba2; */
-            
-            /* Green Theme */
-            /* --primary-color: #11998e;
-            --secondary-color: #38ef7d; */
-            
-            /* Yellow Theme */
-            /* --primary-color: #f7971e;
-            --secondary-color: #ffd200; */
-            
-            /* Red Theme */
-            /* --primary-color: #ee0979;
-            --secondary-color: #ff6a00; */
-            
-            /* Blue Theme (Active) */
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-            
-            --primary-color: #1e3c72;
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-            
-            --secondary-color: #2a5298;
-            
-            /* Gold Theme */
-            /* --primary-color: #d4af37;
-            --secondary-color: #ffd700; */
-            
-            /* Orange Theme */
-            /* --primary-color: #ff8c00;
-            --secondary-color: #ff6347; */
-        }
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            color: #1a1a2e;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
-            padding: 1rem 2rem;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
-            padding: 120px 2rem 80px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -75%;
-            left: -75%;
-            right: -75%;
-            bottom: -75%;
-            background-image: 
-                url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="8" fill="rgba(255,220,100,0.3)"/><line x1="30" y1="10" x2="30" y2="16" stroke="rgba(255,220,100,0.3)" stroke-width="2"/><line x1="30" y1="44" x2="30" y2="50" stroke="rgba(255,220,100,0.3)" stroke-width="2"/><line x1="10" y1="30" x2="16" y2="30" stroke="rgba(255,220,100,0.3)" stroke-width="2"/><line x1="44" y1="30" x2="50" y2="30" stroke="rgba(255,220,100,0.3)" stroke-width="2"/><line x1="16" y1="16" x2="21" y2="21" stroke="rgba(255,220,100,0.3)" stroke-width="2"/><line x1="39" y1="39" x2="44" y2="44" stroke="rgba(255,220,100,0.3)" stroke-width="2"/><line x1="44" y1="16" x2="39" y2="21" stroke="rgba(255,220,100,0.3)" stroke-width="2"/><line x1="21" y1="39" x2="16" y2="44" stroke="rgba(255,220,100,0.3)" stroke-width="2"/></svg>'),
-                url('data:image/svg+xml,<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="10" fill="rgba(255,230,120,0.25)"/><line x1="40" y1="15" x2="40" y2="23" stroke="rgba(255,230,120,0.25)" stroke-width="2.5"/><line x1="40" y1="57" x2="40" y2="65" stroke="rgba(255,230,120,0.25)" stroke-width="2.5"/><line x1="15" y1="40" x2="23" y2="40" stroke="rgba(255,230,120,0.25)" stroke-width="2.5"/><line x1="57" y1="40" x2="65" y2="40" stroke="rgba(255,230,120,0.25)" stroke-width="2.5"/><line x1="23" y1="23" x2="29" y2="29" stroke="rgba(255,230,120,0.25)" stroke-width="2.5"/><line x1="51" y1="51" x2="57" y2="57" stroke="rgba(255,230,120,0.25)" stroke-width="2.5"/><line x1="57" y1="23" x2="51" y2="29" stroke="rgba(255,230,120,0.25)" stroke-width="2.5"/><line x1="29" y1="51" x2="23" y2="57" stroke="rgba(255,230,120,0.25)" stroke-width="2.5"/></svg>');
-            background-size: 180px 180px, 240px 240px;
-            background-position: 0 0, 120px 120px;
-            animation: float 42s infinite linear;
-            opacity: 0.6;
-        }
-
-        @keyframes float {
-            from { transform: translateY(0) rotate(0deg); }
-            to { transform: translateY(-100px) rotate(360deg); }
-        }
-
-        .hero-content {
-            max-width: 900px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-            animation: fadeInUp 1s ease;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-            animation: fadeInUp 1s ease 0.2s both;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .solar-icon {
-            width: 300px;
-            height: 300px;
-            margin: 0 auto 2rem;
-            animation: fadeInUp 1s ease 0.4s both;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-top: 45px;
-        }
-
-        .solar-icon img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        .logo-text {
-            position: relative;
-            z-index: 1;
-            color: white;
-            font-size: 1.5rem;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            font-family: 'Georgia', 'Palatino', 'Times New Roman', serif;
-            text-align: center;
-            line-height: 1.3;
-            padding: 0 10px;
-        }
-
-        .logo-text.medium-length {
-            font-size: 1.125rem;
-        }
-
-        .logo-text.long-length {
-            font-size: 1rem;
-            white-space: normal;
-            max-width: 270px;
-        }
-
-        .section {
-            padding: 80px 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-alt {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        }
-
-        .section h2 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 3rem;
-            color: #2d3748;
-            position: relative;
-            padding-bottom: 1rem;
-        }
-
-        .section h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            border-radius: 2px;
-        }
-
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .benefit-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: center;
-        }
-
-        .benefit-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-        }
-
-        .benefit-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .benefit-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-            font-size: 1.25rem;
-        }
-
-        .about-content {
-            background: white;
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-        }
-
-        .about-content h3 {
-            color: var(--primary-color);
-            margin: 2rem 0 1rem;
-            font-size: 1.5rem;
-        }
-
-        .about-content ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .about-content li {
-            padding: 0.75rem 0;
-            padding-left: 2rem;
-            position: relative;
-        }
-
-        .about-content li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
-            font-weight: bold;
-            font-size: 1.25rem;
-        }
-
-        .image-section {
-            padding: 80px 2rem;
-            text-align: center;
-            background: white;
-        }
-
-        .image-section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-            max-height: 500px;
-            object-fit: cover;
-        }
-
-        .cta-section {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
-            padding: 80px 2rem;
-            text-align: center;
-        }
-
-        .cta-section h2 {
-            color: white;
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .cta-section h2::after {
-            background: white;
-        }
-
-        .cta-section p {
-            font-size: 1.25rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            opacity: 0.95;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: white;
-            color: var(--primary-color);
-            padding: 1rem 3rem;
-            font-size: 1.125rem;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-        }
-
-        .footer {
-            background: #1a1a2e;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            .section h2 {
-                font-size: 2rem;
-            }
-
-
-        }
-    </style>
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DAZ Solar Partners, LLC",
+    "url": "https://dazsolarpartners.com",
+    "description": "Cost-effective solar solutions through Power Purchase Agreements"
+  }
+  </script>
 </head>
 <body>
-    <script>
-        // Function to adjust logo text size based on length
-        function adjustLogoText() {
-            const logoText = document.querySelector('.logo-text');
-            const text = logoText.textContent;
-            const length = text.length;
-            
-            logoText.classList.remove('medium-length', 'long-length');
-            
-            if (length > 25) {
-                logoText.classList.add('long-length');
-            } else if (length > 15) {
-                logoText.classList.add('medium-length');
-            }
-        }
-        
-        // Run on page load
-        window.addEventListener('DOMContentLoaded', adjustLogoText);
-    </script>
 
-    <header class="header">
-        <div class="nav-container">
-            <div class="logo">DAZ Solar Partners, LLC</div>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="./" class="nav-logo">
+        <img src="solar-logo.png" alt="DAZ Solar">
+        DAZ Solar Partners
+      </a>
+      <ul class="nav-links">
+        <li><a href="./" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+        </li>
+      </ul>
+      <button class="hamburger" aria-label="Open menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="./" class="active">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button class="theme-toggle" aria-label="Toggle theme">
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-logo">
+          <img src="solar-logo.png" alt="DAZ Solar Partners Logo">
         </div>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <div class="solar-icon">
-                <img src="solar-logo.png" alt="Solar Logo">
-                <div class="logo-text">DAZ Solar Partners</div>
-            </div>
-            <h1>Have you noticed higher electric bills on your property?</h1>
-            <p>Are you looking to minimize expenses, protect your business from utility rate increases, or just fulfilling your environmental responsibility? Others are finding relief in our Power Purchase Agreement (PPA) solution.</p>
+        <h1>Solar Energy for Your Business. Zero Upfront Cost.</h1>
+        <p class="hero-subtitle">Our Power Purchase Agreement lets you lock in lower electricity rates from day one — with no investment, no risk, and maintenance included.</p>
+        <div class="hero-ctas">
+          <a href="services.html" class="btn btn-accent">How It Works</a>
+          <a href="contact.html" class="btn btn-white">Get a Free Quote</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="section">
-        <h2>What Benefits Await You?</h2>
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <div class="benefit-icon">💰</div>
-                <h3>Immediate Return</h3>
-                <p>Start saving from day one</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">🎯</div>
-                <h3>No Cost to Start</h3>
-                <p>$0 Investment Required</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">⚡</div>
-                <h3>Fast & Simple Process</h3>
-                <p>Quick and efficient transition</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">🔒</div>
-                <h3>Lock in Your Rates</h3>
-                <p>Protection from rate increases</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">🔧</div>
-                <h3>Maintenance Included</h3>
-                <p>Hassle-free solar energy</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">🌍</div>
-                <h3>Clean Energy</h3>
-                <p>Contribute to a greener planet</p>
-            </div>
+  <!-- Benefits -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Why Businesses Choose Us</h2>
+        <p>Our PPA model removes every barrier to going solar</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card fade-in">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Immediate Savings</h3>
+          <p>Start paying less for electricity from the day your system goes live. No waiting for ROI.</p>
         </div>
-    </section>
-
-    <section class="section section-alt">
-        <h2>About DAZ Solar Partners, LLC</h2>
-        <div class="about-content">
-            <h3>Our Mission</h3>
-            <p>We are committed to offering cost-effective solar solutions that not only minimize operational expenses but also contribute to a sustainable future by reducing carbon footprints.</p>
-            
-            <h3>Why Choose Us</h3>
-            <ul>
-                <li><strong>Immediate Savings:</strong> Our PPA solution allows businesses to start saving from day one with no upfront investment required.</li>
-                <li><strong>Simplicity and Speed:</strong> We provide a straightforward and efficient process to transition to solar energy, ensuring minimal disruption to your business operations.</li>
-                <li><strong>Rate Stability:</strong> Lock in your electricity rates and protect your business from unpredictable utility rate increases.</li>
-                <li><strong>Maintenance Included:</strong> Enjoy hassle-free solar energy with maintenance and operational support included in our service.</li>
-                <li><strong>Environmental Responsibility:</strong> By adopting solar power, businesses contribute to cleaner air and a greener planet, aligning with corporate sustainability goals.</li>
-                <li><strong>Business Protection:</strong> Shield your business from the volatility of utility costs and ensure long-term stability and growth.</li>
-            </ul>
+        <div class="benefit-card fade-in">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>$0 Upfront</h3>
+          <p>No capital investment required. We own, install, and maintain the solar system on your property.</p>
         </div>
-    </section>
-
-    <section class="image-section">
-        <img src="panels.png" alt="Clean energy for future generations">
-    </section>
-
-    <section class="cta-section">
-        <h2>Curious about how solar can increase your net operating income?</h2>
-        <p>Join the forward-thinking businesses that are securing their future with renewable energy solutions. Embrace solar power and protect your business while making a positive impact on the environment.</p>
-        <a href="mailto:dbarnets@gmail.com" class="cta-button">Contact Us Today</a>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="logo">Copyright DAZ Solar Partners, LLC</div>
+        <div class="benefit-card fade-in">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Fast & Simple</h3>
+          <p>We handle the entire process — from design and permitting to installation and grid connection.</p>
         </div>
-    </footer>
+        <div class="benefit-card fade-in">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Locked-In Rates</h3>
+          <p>Predictable energy costs for the life of your agreement. No more surprise utility increases.</p>
+        </div>
+        <div class="benefit-card fade-in">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Maintenance Included</h3>
+          <p>We monitor, maintain, and repair the system for the duration of the agreement at no cost to you.</p>
+        </div>
+        <div class="benefit-card fade-in">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Clean Energy</h3>
+          <p>Reduce your carbon footprint and align with sustainability goals your stakeholders care about.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solar Panels Image -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="image-banner fade-in">
+        <img src="panels.png" alt="Solar panel installation">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" style="background: var(--bg-alt);">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>What Our Partners Say</h2>
+        <p>Businesses that made the switch to solar</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in">
+          <p>Switching to solar through DAZ was one of the easiest decisions we made. Zero upfront cost and we saw savings on our very first electricity bill.</p>
+          <div class="testimonial-author">Regional Property Manager</div>
+          <div class="testimonial-role">Commercial Real Estate</div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <p>The PPA model removed all the risk. DAZ handled everything from permitting to installation, and our tenants love that we're a green building now.</p>
+          <div class="testimonial-author">Facilities Director</div>
+          <div class="testimonial-role">Industrial Campus</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container fade-in">
+      <h2>Ready to Lower Your Energy Costs?</h2>
+      <p>Find out how much your business could save with a no-obligation solar assessment.</p>
+      <a href="contact.html" class="btn btn-white">Get Your Free Quote</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 DAZ Solar Partners, LLC. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
